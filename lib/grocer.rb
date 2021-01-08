@@ -2,6 +2,16 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
+  returned_item = nil
+  
+  collection.each do |i|
+    if i[:item] == name
+      returned_item = i
+      return returned_item
+    end
+  end
+  
+  return returned_item
 
 end
 
